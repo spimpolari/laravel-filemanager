@@ -28,6 +28,17 @@ class LfmController extends Controller
         return view('laravel-filemanager::index');
     }
 
+    /**
+     * Show the filemanager.
+     *
+     * @return mixed
+     */
+    public function showEmbed()
+    {
+        return view('laravel-filemanager::select');
+    }
+
+
     public function getErrors()
     {
         $arr_errors = [];
